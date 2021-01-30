@@ -9,10 +9,11 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Nav />
-      <Contentbox>
-        <Portfolioblock/>
-      </Contentbox>
+        <Nav />
+        <Contentbox>
+          <Route exact path="/" component={Resumeblock} />
+          <Route exact path="/portfolio" component={Portfolioblock} />
+        </Contentbox>
     </Router>
   );
 }
