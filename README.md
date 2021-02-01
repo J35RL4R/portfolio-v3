@@ -4,7 +4,7 @@ An online rersume with links to socialmedia, github, resume other professional i
 
 
 Link to the deployed website
-https://j35rl4r.github.io/responsive.portfolio.second.edition/index.html
+https://j35rl4r.github.io/portfolio-v3/
 
 Uses React instead of traditional html. 
 
