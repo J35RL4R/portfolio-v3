@@ -13,7 +13,7 @@ function App() {
         <Header/>
         <Contentbox>
           <Route exact path="/" component={Resumeblock} />
-          <Route exact path="/portfolio-v3" component={Resumeblock} />
+          <Route exact path="/portfolio-v3/" component={Resumeblock} />
           <Route exact path="/portfolio" component={Portfolioblock} />
         </Contentbox>
         <Footer /> 
