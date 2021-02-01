@@ -14,9 +14,9 @@ function nav() {
           <li className="nav-item">
             <div className="nav-item">
             <Link
-            to="/"
+            to="/about"
             className={
-            window.location.pathname === "/" || window.location.pathname === "/"
+            window.location.pathname === "/about" || window.location.pathname === "/about"
               ? "nav-link active"
               : "nav-link"
           }
