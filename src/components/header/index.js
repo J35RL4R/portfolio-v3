@@ -16,7 +16,7 @@ function nav() {
             <Link
             to="/about"
             className={
-            window.location.pathname === "/about" || window.location.pathname === "/about"
+            window.location.pathname === "/portfolio-v3/" || window.location.pathname === "/portfolio-v3/"
               ? "nav-link active"
               : "nav-link"
           }
