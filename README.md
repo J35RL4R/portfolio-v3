@@ -2,17 +2,11 @@ Professional portfolio page
 An online rersume with links to socialmedia, github, resume other professional information. 
 ![portfolio-header](/src/components/images/resumesampleimage.PNG)
 
-Files and Directories
-index.html
-script.js
-styleshet.css
-README.md
-Bootstrap
-A navbar
-A responsive layout
 
 Link to the deployed website
 https://j35rl4r.github.io/responsive.portfolio.second.edition/index.html
+
+Uses React instead of traditional html. 
 
 
 
