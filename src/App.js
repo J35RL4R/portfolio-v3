@@ -1,19 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from "./components/nav/index";
+import Header from "./components/header/index";
 import Contentbox from "./components/contentbox/index"
 import Resumeblock from "./components/resumeblock/index"
 import Portfolioblock from "./components/portfolioblock"
+import Footer from "./components/footer/footer"
 import './App.css';
 
 function App() {
   return (
     <Router>
-        <Nav />
+        <Header/>
         <Contentbox>
           <Route exact path="/" component={Resumeblock} />
           <Route exact path="/portfolio" component={Portfolioblock} />
         </Contentbox>
+        <Footer /> 
     </Router>
   );
 }

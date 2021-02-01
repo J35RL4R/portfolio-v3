@@ -31,7 +31,7 @@ function Portfolioblock() {
                             <div className='col-md-6'>
                             <a href= {"https://scorecard-visualizer.herokuapp.com/"} target = "_blank"rel="noreferrer"><img src={Collegevis} className="img-fluid" alt='sample image'/></a>
                             <div className = "container">
-                                <p>ThCollege Scorecard Visualizer is an application allowing users to search for colleges and review a variety of returned statistics in a visually appealing dashboard graphical interface.</p>
+                                <p>The College Scorecard Visualizer is an application allowing users to search for colleges and review a variety of returned statistics in a visually appealing dashboard graphical interface.</p>
                                 <p>Check out the repo  <a href={"https://github.com/J35RL4R/college-score-card-visualizer"} target="_blank"rel="noreferrer" >here</a></p>
                             </div>
                             </div>

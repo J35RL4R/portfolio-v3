@@ -1,5 +1,6 @@
 body  {
   background-color: #cccccc;
+  background-image: url("./components/images/background-img.png");
   
 }
 
@@ -28,7 +29,7 @@ img {
   border:10px;
 
 }
-.resume-border-box, .portfolio-table, .contact-form { 
+.resume-border-box, .portfolio-table { 
   margin: 20px;
   padding: 10px;
   border: 10px;
@@ -63,3 +64,11 @@ input[type=submit]:hover {
 .fab, .fas {
   color: black;
 }
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background: white;
+  text-align: center;   
+  }

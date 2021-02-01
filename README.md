@@ -1,6 +1,6 @@
 Professional portfolio page
 An online rersume with links to socialmedia, github, resume other professional information. 
-![portfolio-header](/images/resumesampleimage.PNG)
+![portfolio-header](/src/components/images/resumesampleimage.PNG)
 
 Files and Directories
 index.html

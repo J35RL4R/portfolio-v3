@@ -12,7 +12,7 @@ function nav() {
     <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <div className="nav-link">
+            <div className="nav-item">
             <Link
             to="/"
             className={
@@ -21,7 +21,7 @@ function nav() {
               : "nav-link"
           }
             >
-            <div className="nav-link">About</div>
+            About
             </Link>
             </div>
           </li>
@@ -31,7 +31,7 @@ function nav() {
             className={
             window.location.pathname === "/portfolio" ? "nav-link active" : "nav-link" }
           >
-          <div className="nav-link">Portfolio</div>
+          Portfolio
           </Link>
         </li>
       </ul>
