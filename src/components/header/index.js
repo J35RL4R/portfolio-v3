@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 
 // Depending on the current path, this component sets the "active" className on the appropriate navigation link item
 function nav() {
