@@ -30,12 +30,12 @@ img {
 
 }
 .resume-border-box, .portfolio-table { 
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
+  padding: 1px;
   border: 10px;
   box-sizing: border-box;
   background-color: whitesmoke;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 3px 3px 3px #738276;
   text-align: relative;
 }
 input[type=text], select, textarea {
