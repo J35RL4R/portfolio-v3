@@ -29,6 +29,9 @@ img {
   border:10px;
 
 }
+.resume-list-formatter{
+  background-color: whitesmoke;
+}
 .resume-border-box, .portfolio-table { 
   margin: 10px;
   padding: 1px;
