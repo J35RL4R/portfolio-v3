@@ -3,37 +3,45 @@ import Headshot from "../images/portfolio-picture.jpg";
 import Eddylogo from "../images/educationdynamicslogo.PNG"
 import Merionlogo from "../images/merion-matters-logo.png"
 import CreativeClicklogo from "../images/creative-click-media-logo.png"
-import { Row, Container, Col, Accordion, Card } from "react-bootstrap";
+import { Row, Container, Col, Accordion, Card, ListGroup } from "react-bootstrap";
 
 function resumeblock() {
     return (
         <Container>
+            <Row><h1>My Professional Background</h1></Row>
             <Row>
-                <Col md={5}>
-                    <h1>My Professional Background</h1>
+                <Col>
                     <img src={Headshot} class="img-fluid" alt="SEO Technical Analyst Jesse R. Larsen" />
                     <Row>
                         <Col>
-                            <a class="fab fa-github-square fa-3x" href={"https://github.com/J35RL4R/"} target="_blank" rel="noreferrer"></a>
+                            <a class="fab fa-github-square fa-2x" href={"https://github.com/J35RL4R/"} target="_blank" rel="noreferrer"></a>
                         </Col>
                         <Col>
-                            <a class="fab fa-linkedin fa-3x" href={"https://www.linkedin.com/in/jesse-r-larsen/"} target="_blank" rel="noreferrer"></a>
+                            <a class="fab fa-linkedin fa-2x" href={"https://www.linkedin.com/in/jesse-r-larsen/"} target="_blank" rel="noreferrer"></a>
                         </Col>
                         <Col>
-                            <a class="fas fa-envelope fa-3x" href={"mailto:larsenj732@gmail.com"} target="_blank" rel="noreferrer"></a>
+                            <a class="fas fa-envelope fa-2x" href={"mailto:larsenj732@gmail.com"} target="_blank" rel="noreferrer"></a>
                         </Col>
                         <Col>
-                            <a class="fas fa-file fa-3x" href={"https://docs.google.com/document/d/1t4nm60cDcDlzaNyKp2yBYgtSda66QMH6dJ27xNseKpE/edit?usp=sharing"} target="_blank" rel="noreferrer"></a>
+                            <a class="fas fa-file fa-2x" href={"https://docs.google.com/document/d/1t4nm60cDcDlzaNyKp2yBYgtSda66QMH6dJ27xNseKpE/edit?usp=sharing"} target="_blank" rel="noreferrer"></a>
                         </Col>
                     </Row>
-                    <div className="resume-border-box">
-                        <p>After Graduating from Rowan University in 2015, Jesse has pursued a career in digital marketing.</p>
-                        <p>His experience comes from working in a variety of industries including SaaS companies, digital marketing firms, healthcare publication and higher education marketing.</p>
-                        <p>Jesse has consistently proven to excel particularly in on and off-page site optimizations and project management.</p>
-                    </div>
-
                 </Col>
-                <div class="col-md-7">
+                <Col>
+                    <Accordion>
+                        <Card className="resume-border-box">
+                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                <h6 text="center">Professional Summary</h6>
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <Card.Body>
+                                    <p>After Graduating from Rowan University in 2015, Jesse has pursued a career in digital marketing.</p>
+                                    <p>His experience comes from working in a variety of industries including SaaS companies, digital marketing firms, healthcare publication and higher education marketing.</p>
+                                    <p>Jesse has consistently proven to excel particularly in on and off-page site optimizations and project management.</p>
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
                     <Accordion>
                         <Card className="resume-border-box">
                             <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -42,47 +50,64 @@ function resumeblock() {
                                 <p>April 2017- Present</p>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
-                            <Card.Body>
-                            <ul>
-                                <li>SEO technical optimization on mulitple company owned and affilate sites</li>
-                                <li>Execution of multiple off-page optimization projects for company owned sites and clients</li>
-                                <li>Content development, editing, and optimization</li>
-                                <li>Heads social media for multiple affiliate accounts</li>
-                            </ul>
-                            </Card.Body>
+                                <Card.Body>
+                                    <ListGroup variant="flush" className="resume-list-formatter">
+                                        <ListGroup.Item disabled tag="a" href="#">SEO technical optimization on mulitple company owned and affilate sites</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Execution of multiple off-page optimization projects for company owned sites and clients</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Content development, editing, and optimization</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Heads social media for multiple affiliate accounts</ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Body>
                             </Accordion.Collapse>
                         </Card>
                     </Accordion>
-                    <div class="resume-border-box">
-                        <img src={Merionlogo} alt="merion matters logo" class="float-left" />
-                        <h3>SEO/SEM Specialist - Merion Matters </h3>
-                        <p>September 2016 - March 2017</p>
-                        <ul>
-                            <li>Interpreting Google, MOZ, Screaming Frog and ahrefs analytics</li>
-                            <li>Performed search engine optimization for eleven of their websites</li>
-                            <li>Researching and ranking content for relevant keywords with high search volumes</li>
-                            <li>Editing and managing anchor text, URLs, title tags, and meta descriptions</li>
-                            <li>Advising editors on how they can help optimize content</li>
-                            <li>Strategizing with editors to formulate content strategies and social media best practices</li>
-                            <li>Managed paid search for two of their retail websites</li>
-                            <li>Managing social media accounts</li>
-                        </ul>
-                    </div>
-                    <div class="resume-border-box">
-                        <img src={CreativeClicklogo} alt="creative click media logo" class="float-left" />
-                        <h3>SEO Account Coordinator - Creative Click Media</h3>
-                        <p>May 2016 - September 2016</p>
-                        <ul>
-                            <li>Search engine optimization for 30+ clients in a variety of industries</li>
-                            <li>Keyword research</li>
-                            <li>Interpreting Google, SEMrush, Screaming Frog and ahrefs analytics</li>
-                            <li>Daily site audits</li>
-                            <li>Daily commiunications with clients</li>
-                            <li>Social media and content planning</li>
-                            <li>Blog writing for company and external clients</li>
-                        </ul>
-                    </div>
-                </div>
+                    <Accordion>
+                        <Card className="resume-border-box">
+                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                <img src={Merionlogo} alt="merion matters logo" class="float-left" />
+                                <h6>SEO/SEM Specialist - Merion Matters </h6>
+                                <p>September 2016 - March 2017</p>
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <Card.Body>
+                                    <ListGroup variant="flush" className="resume-list-formatter">
+                                        <ListGroup.Item disabled tag="a" href="#">Interpreting Google, MOZ, Screaming Frog and ahrefs analytics</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Performed search engine optimization for eleven of their websites</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Researching and ranking content for relevant keywords with high search volumes</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Editing and managing anchor text, URLs, title tags, and meta descriptions</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Advising editors on how they can help optimize content</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Strategizing with editors to formulate content strategies and social media best practices</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Managed paid search for two of their retail websites</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Managing social media accounts</ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
+                    <Accordion>
+                        <Card className="resume-border-box">
+                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                <img src={CreativeClicklogo} alt="creative click media logo" class="float-left" />
+                                <h6>SEO Account Coordinator - Creative Click Media</h6>
+                                <p>May 2016 - September 2016</p>
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <Card.Body>
+                                    <ListGroup variant="flush" className="resume-list-formatter">
+                                        <ListGroup.Item disabled tag="a" href="#">Search engine optimization for 30+ clients in a variety of industries</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Keyword research</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Interpreting Google, SEMrush, Screaming Frog and ahrefs analytics</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Daily site audits</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Daily commiunications with clients</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Strategizing with editors to formulate content strategies and social media best practices</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Social media and content planning</ListGroup.Item>
+                                        <ListGroup.Item disabled tag="a" href="#">Blog writing for company and external clients</ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
+                </Col>
             </Row>
         </Container>
     );
