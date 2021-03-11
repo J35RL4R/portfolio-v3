@@ -16,7 +16,6 @@ function App() {
           <Route exact path="/portfolio-v3/" component={Resumeblock} />
           <Route exact path="/portfolio" component={Portfolioblock} />
         </Contentbox>
-        <Footer /> 
     </Router>
   );
 }
