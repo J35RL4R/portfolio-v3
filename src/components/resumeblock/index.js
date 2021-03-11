@@ -8,30 +8,23 @@ import { Row, Container, Col, Accordion, Card, ListGroup } from "react-bootstrap
 function resumeblock() {
     return (
         <Container>
-            <Row><h1>My Professional Background</h1></Row>
             <Row>
                 <Col>
-                    <img src={Headshot} class="img-fluid" alt="SEO Technical Analyst Jesse R. Larsen" />
                     <Row>
-                        <Col>
-                            <a class="fab fa-github-square fa-2x" href={"https://github.com/J35RL4R/"} target="_blank" rel="noreferrer"></a>
-                        </Col>
-                        <Col>
-                            <a class="fab fa-linkedin fa-2x" href={"https://www.linkedin.com/in/jesse-r-larsen/"} target="_blank" rel="noreferrer"></a>
-                        </Col>
-                        <Col>
-                            <a class="fas fa-envelope fa-2x" href={"mailto:larsenj732@gmail.com"} target="_blank" rel="noreferrer"></a>
-                        </Col>
-                        <Col>
-                            <a class="fas fa-file fa-2x" href={"https://docs.google.com/document/d/1t4nm60cDcDlzaNyKp2yBYgtSda66QMH6dJ27xNseKpE/edit?usp=sharing"} target="_blank" rel="noreferrer"></a>
+                        <Col lg={12}>
+                            <img src={Headshot} className="img-fluid portfolio-pic" height="300" width="300" alt="SEO Technical Analyst Jesse R. Larsen" />
                         </Col>
                     </Row>
-                </Col>
-                <Col>
+                    <Row>
+                        <a className="fa-fw fab fa-github-square fa-2x" href={"https://github.com/J35RL4R/"} title="github"target="_blank" rel="noreferrer"></a>
+                        <a className="fa-fw fab fa-linkedin fa-2x" href={"https://www.linkedin.com/in/jesse-r-larsen/"} title="linkedin" target="_blank" rel="noreferrer"></a>
+                        <a className="fa-fw fas fa-envelope fa-2x" href={"mailto:larsenj732@gmail.com"} target="_blank" title="email address" rel="noreferrer"></a>
+                        <a className="fa-fw fas fa-file fa-2x" href={"https://docs.google.com/document/d/1t4nm60cDcDlzaNyKp2yBYgtSda66QMH6dJ27xNseKpE/edit?usp=sharing"} title="Resume" target="_blank" rel="noreferrer"></a>
+                    </Row>
                     <Accordion>
                         <Card className="resume-border-box">
                             <Accordion.Toggle as={Card.Header} eventKey="0">
-                                <h6 text="center">Professional Summary</h6>
+                                <h2>Professional Summary</h2>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                                 <Card.Body>
